@@ -33,17 +33,10 @@ body {
   .recipe-card a {
     text-decoration: none;
     color: blue;
-  }
-  
-  .recipe-card img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
-  }
-  
+  }  
   .recipe-card h2 {
     margin-top: 10px;
+    color: blueviolet
   }
   
   footer {
@@ -53,7 +46,13 @@ body {
     text-align: center;
     margin-top: 50%;
   }
-  body {background-color: lightblue;}
+  body { 
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: none;
+    background-attachment: fixed;
+    background-color: lightblue;}
 
   .sign-in-button {
   position: fixed;
@@ -69,4 +68,46 @@ body {
 /* Optional hover effect */
 .sign-in-button:hover {
   background-color: #ddd;
+}
+.menu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color:white;
+}
+.menu li a:hover {
+  background-color: blue;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.search-box {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 16px;
 }
